@@ -1,0 +1,10 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: registry.novaonx.com/novaonx/novaonx-home
+    registry: registry.novaonx.com
+    username: root
+    password: epFdmf7VgivYEQ
+    tags:
+      - latest
+      - '${DRONE_COMMIT_SHA}'
